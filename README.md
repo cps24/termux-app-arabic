@@ -16,6 +16,7 @@ This custom fork of Termux adds several enhancements to the terminal experience:
 - **Kawkab Mono Monospace Font:** Bundles the **Kawkab Mono** monospace font as the default fallback, offering clean, connected Arabic glyphs alongside Source Code Pro for English characters.
 - **Ubuntu Terminal Theme:** A built-in terminal theme option under preferences to change the terminal appearance to Ubuntu colors (dark purple background `#300A24`, white text, and white cursor).
 - **Text Selection & Cursor Mapping:** Fixed cursor positioning and text selection handle offsets to align perfectly with the visually reordered RTL characters.
+- **Arabic Display Test Cases (Diagnostics Screen):** A built-in diagnostic tool in settings to view raw Arabic/BiDi rendering test cases, inspect font details, and copy samples to the clipboard for real terminal verification.
 
 Note that this repository is for the app itself (the user interface and the terminal emulation). For the packages installable inside the app, see [termux/termux-packages](https://github.com/termux/termux-packages).
 
