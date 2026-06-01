@@ -1060,6 +1060,9 @@ public final class TerminalView extends View {
         if (visCol >= mEmulator.mColumns) return mEmulator.mColumns;
         TerminalBuffer screen = mEmulator.getScreen();
         if (screen == null) return visCol;
+        int activeTranscriptRows = screen.getActiveTranscriptRows();
+        int screenRows = screen.getActiveRows() - activeTranscriptRows;
+        if (externalRow < -activeTranscriptRows || externalRow >= screenRows) return visCol;
         int internalRow = screen.externalToInternalRow(externalRow);
         if (internalRow < 0 || internalRow >= screen.getActiveRows()) return visCol;
         TerminalRow lineObject = screen.allocateFullLineIfNecessary(internalRow);
@@ -1131,6 +1134,9 @@ public final class TerminalView extends View {
         if (logCol >= mEmulator.mColumns) return mEmulator.mColumns;
         TerminalBuffer screen = mEmulator.getScreen();
         if (screen == null) return logCol;
+        int activeTranscriptRows = screen.getActiveTranscriptRows();
+        int screenRows = screen.getActiveRows() - activeTranscriptRows;
+        if (externalRow < -activeTranscriptRows || externalRow >= screenRows) return logCol;
         int internalRow = screen.externalToInternalRow(externalRow);
         if (internalRow < 0 || internalRow >= screen.getActiveRows()) return logCol;
         TerminalRow lineObject = screen.allocateFullLineIfNecessary(internalRow);
