@@ -23,6 +23,15 @@ public class TerminalViewPreferencesFragment extends PreferenceFragmentCompat {
         preferenceManager.setPreferenceDataStore(TerminalViewPreferencesDataStore.getInstance(context));
 
         setPreferencesFromResource(R.xml.termux_terminal_view_preferences, rootKey);
+
+        androidx.preference.Preference arabicDiagPref = findPreference("arabic_diagnostics");
+        if (arabicDiagPref != null) {
+            arabicDiagPref.setOnPreferenceClickListener(preference -> {
+                android.content.Intent intent = new android.content.Intent(context, com.termux.app.activities.ArabicDiagnosticsActivity.class);
+                context.startActivity(intent);
+                return true;
+            });
+        }
     }
 
 }

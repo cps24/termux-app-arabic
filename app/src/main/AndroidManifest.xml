@@ -74,6 +74,13 @@
                 android:resource="@xml/shortcuts" />
         </activity>
 
+        <activity
+            android:name="com.termux.app.activities.ArabicDiagnosticsActivity"
+            android:label="@string/arabic_diagnostics_title"
+            android:theme="@style/Theme.TermuxActivity.DayNight.NoActionBar"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+
         <activity-alias
             android:name=".HomeActivity"
             android:exported="true"

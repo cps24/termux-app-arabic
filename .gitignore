@@ -37,3 +37,8 @@ local.properties
 .swp
 ehthumbs.db
 Thumbs.db
+
+# Agent metadata
+.agents/
+.antigravitycli/
+graphify-out/

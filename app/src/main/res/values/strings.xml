@@ -238,4 +238,19 @@
     <string name="termux_terminal_view_terminal_theme_title">Terminal Theme</string>
     <string name="termux_terminal_view_terminal_theme_summary">Choose the color theme for the terminal</string>
 
+    <!-- Arabic Display Test Cases -->
+    <string name="arabic_diagnostics_title">Arabic Display Test Cases</string>
+    <string name="arabic_diagnostics_summary">View raw Arabic/BiDi display test cases and copy them to clipboard.</string>
+    <string name="arabic_diagnostics_sample_tashkeel_title">1. Text with Tashkeel (اللغة العربية المشكّلة):</string>
+    <string name="arabic_diagnostics_sample_tashkeel_text">اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ</string>
+    <string name="arabic_diagnostics_sample_mixed_title">2. Mixed Arabic/Latin Text (نصوص ثنائية الاتجاه مختلطة):</string>
+    <string name="arabic_diagnostics_sample_mixed_text">نص عربي مع English Words وتنسيق صحيح</string>
+    <string name="arabic_diagnostics_sample_punctuation_title">3. Punctuation Mirroring (انعكاس الأقواس والرموز):</string>
+    <string name="arabic_diagnostics_sample_punctuation_text">قائمة الأرقام (123, 456, 789) صحيحة؟</string>
+    <string name="arabic_diagnostics_sample_ligatures_title">4. Lam-Alef Ligature Layout (اختزال اللام ألف):</string>
+    <string name="arabic_diagnostics_sample_ligatures_text">لا إله إلا الله، السلام عليكم والرحمة والإكرام</string>
+    <string name="arabic_diagnostics_info_title">System Font &amp; Theme Info:</string>
+    <string name="arabic_diagnostics_btn_copy">Copy Test Cases (نسخ نصوص التجربة)</string>
+    <string name="arabic_diagnostics_btn_back">العودة للإعدادات (Go Back)</string>
+
 </resources>

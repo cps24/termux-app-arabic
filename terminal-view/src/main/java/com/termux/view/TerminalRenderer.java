@@ -129,7 +129,7 @@ public final class TerminalRenderer {
                 if (hasArabic) {
                     int logCharIndex = arabicResult.visualToLogicalMap[currentCharIndex];
                     if (logCharIndex >= 0 && logCharIndex < charToColMap.length) {
-                        logicalColumn = charToColMap[logCharIndex];
+                        logicalColumn = Math.min(charToColMap[logCharIndex], columns - 1);
                     } else {
                         logicalColumn = column;
                     }

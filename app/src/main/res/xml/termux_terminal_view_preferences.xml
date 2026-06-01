@@ -18,6 +18,11 @@
             app:entryValues="@array/terminal_theme_values"
             app:defaultValue="default" />
 
+        <Preference
+            app:key="arabic_diagnostics"
+            app:title="@string/arabic_diagnostics_title"
+            app:summary="@string/arabic_diagnostics_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
